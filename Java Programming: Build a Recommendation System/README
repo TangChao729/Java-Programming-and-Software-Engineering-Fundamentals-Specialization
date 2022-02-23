@@ -1,3 +1,54 @@
 https://www.dukelearntoprogram.com//capstone/recommender.php?id=u4BNIemLyEFVAJ
 
 Above is the operation website for the recommendation system.
+
+An brief explanation of the idea behind this program:
+
+Provided dataset includes:
+1) movies and its related information such as genre, country, time etc. 
+2) raters and rating information include rater's ID and its rating value to movies.
+
+A few initial objects:
+1) Movie and methods to get movie information.
+2) Rater and methods to get rater information.
+3) Rating and methods to get rating information.
+
+Provided database constructors:
+1) MovieDatabase class.
+2) RaterDatabase class.
+
+Filters implemented in this project includes:
+1) Time length
+2) Year
+3) Genre
+4) Directors
+T) MultiFilters class
+S) TrueFilter class
+
+A test class called MovieRunnerSimilarRatings to test each methods in FourthRatings class.
+
+A RecommendationRunner class and its interface to be used to upload to grading site.
+
+And finally, the FourthRatings class (named fourth as this is the fourth part of the project). It includes:
+1) constructor
+2) getAverageByID: get average rating by provided Rater ID
+3) getAverageRatings: get all movies average ratings.
+4) getAverageRatingsByFilter: similar to above but with filters.
+
+5) dotProduct: a factor to compare similarites between two Raters for the same movies (based on Rater me's collection).
+6) getSimilarities: a calculator of the similarities between two Raters for the same movies
+7) getSimilarRatings: use dotProduct to calculate the similarties between provided Rater ID and the rest Raters in the RaterDatabase.
+                      Then, select top x of Rater (which should share same interest to Rater me), for each of all movies that Rater x has rated,
+                      calculate the weighted average rating for this movie, add it to the return list. Sort the list by weighted rating value.
+                      
+8) getSimilarRatingsByFilter: similar to above but with filters.
+
+How the system actually works:
+1) Provided x number of movies (randomly) to Rater me.
+2) Rater me give its rating to each movie.
+3) Add Rater me to RaterDatabase.
+4) Compare Rater me and each of the rest Raters in term of their rating similarities.
+5) Then, select top x of Rater (which should share same interest to Rater me), for each of all movies that Rater x has rated,
+   calculate the weighted average rating for this movie, add it to the return list. Sort the list by weighted rating value.
+6) Now, we have all movies that Raters who share the same interest with Rater me have viewed and rated, in a sorted list.
+7) The top movies are the most recommended to Rater me.
