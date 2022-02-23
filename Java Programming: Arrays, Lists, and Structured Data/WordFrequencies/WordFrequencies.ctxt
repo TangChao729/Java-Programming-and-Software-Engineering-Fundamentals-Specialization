@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=WordFrequencies
+comment0.text=\n\ You\ will\ write\ a\ program\ to\ determine\ the\ word\ that\ occurs\ the\ most\ often\ in\ a\ file.\ \n\ If\ more\ than\ one\ word\ occurs\ as\ the\ most\ often,\ then\ return\ the\ first\ such\ word\ found.\ \n\ You\ should\ make\ all\ words\ lowercase\ before\ counting\ them.\ \n\ Thus,\ \u201CThis\u201D\ and\ \u201Cthis\u201D\ will\ both\ be\ counted\ as\ the\ lowercase\ version\ of\ \u201Cthis\u201D.\ \n\ You\ should\ not\ consider\ punctuation,\ so\ \u201Cend\u201D\ and\ \u201Cend,\u201D\ will\ be\ considered\ different\ words.\ \n\ Use\ the\ WordFrequencies\ program\ in\ the\ lesson\ as\ a\ starting\ point.\n\ \n\ For\ more\ information\ about\ what\ the\ exercise\ is\ about,\ please\ refer\ to\ the\ readme\ file.\n\ \n\ @author\ (Abraham\ Ferrero)\ \n\ @version\ (25/OCT/2017)\n
+comment1.params=
+comment1.target=WordFrequencies()
+comment2.params=
+comment2.target=void\ findUnique()
+comment3.params=
+comment3.target=void\ tester()
+comment4.params=
+comment4.target=void\ findIndexOfMax()
+comment5.params=inputWord
+comment5.target=java.lang.String\ stripSymbols(java.lang.String)
+numComments=6
