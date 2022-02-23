@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=WordLengths
+comment1.params=inputWord
+comment1.target=java.lang.String\ stripSymbols(java.lang.String)
+comment2.params=
+comment2.target=void\ testStrip()
+comment3.params=resource\ counts
+comment3.target=int\ countWordLengths(edu.duke.FileResource,\ int[])
+comment4.params=
+comment4.target=void\ testCountWordLengths()
+comment5.params=values
+comment5.target=int\ indexOfMax(int[])
+numComments=6
